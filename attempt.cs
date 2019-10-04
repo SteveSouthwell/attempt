@@ -40,7 +40,7 @@ namespace attempt
 				// Console.Out.WriteLine("Called with arguments: {0}", String.Join(", ", args));
 				for(int i=0; i<args.Length ; i++ ) 
 				{
-					argList.Add(args[i],args[i]);
+                    argList.Add(i.ToString(), args[i]);
 				}
 				// See if the user is asking for help
 				if (argList.Contains("/?") || argList.Contains("--help") || argList.Contains("-h") || argList.Contains("-?")) 
